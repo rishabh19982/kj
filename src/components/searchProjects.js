@@ -5,7 +5,7 @@ import stock_image from './stock_img.jpg';
 const pageHeaderStyle = {
   margin: 'auto',
   marginTop: '15vh',
-  marginBottom: '25vh',
+  marginBottom: '6vh',
   textAlign: 'center'
 };
 

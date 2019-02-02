@@ -9,6 +9,9 @@ import SearchProjects from './components/searchProjects';
 import ProjectInfo from './components/ProjectInfo';
 import LoginPage from './components/LoginPage';
 
+import SellerPreviousTransactions from './components/SellerPreviousTransactions';
+import BuyerTransactions from './components/BuyerTransactions';
+
 //import './App.css';
 class NoMatch extends Component {
   constructor(props) {
@@ -36,7 +39,10 @@ class App extends Component {
             <Route path="/temp/" exact component={tempComponent} />
             <Route path="/projects/search" exact component={SearchProjects} />
             <Route path="/projects/:id" exact component={ProjectInfo} />
-            <Route path="/login" exact component={LoginPage} />
+            <Route path="/login"  exact component={LoginPage} />
+            <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
+            <Route path="/buyerTable" exact component={BuyerTransactions} />
+
             <Route component={NoMatch} />
           </Switch>
           <Footer />
