@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 class FrontPage extends Component {
   render() {
     return (
       <div>
-        <Header />
         <header className="masthead text-center text-white d-flex">
           <div className="container my-auto">
             <div className="row">
@@ -207,7 +204,6 @@ class FrontPage extends Component {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     );
   }
