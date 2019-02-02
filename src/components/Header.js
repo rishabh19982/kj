@@ -13,13 +13,16 @@ class Header extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="/temp">Temp</Link>
+                <Link className="nav-link js-scroll-trigger" to="/projects/search/">Projects</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="/projects/search/">Services</Link>
+                <Link className="nav-link js-scroll-trigger" to="/events/asd">Events</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                <a className="nav-link js-scroll-trigger" href="#portfolio">Orders</a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="/login">Internships</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link js-scroll-trigger" to="/login">Login</Link>

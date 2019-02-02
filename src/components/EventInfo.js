@@ -1,69 +1,17 @@
 import React, {Component} from 'react';
 import stock_image from './stock_img.jpg';
 
-const projectTitleStyle = {
+const workshoeventpTitleStyle = {
   marginTop:'10vh',
   fontSize: '3em'
 };
 
-class Comment extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-
-    return (
-      <div className="container" style={{backgroundColor: '#ddd'}}>
-        <p className="mb-0 pt-1">
-        <strong>{this.props.comment.user}</strong> <br />
-        {this.props.comment.text}
-        </p>
-        <p className="text-right mb-0" style={{fontSize:'0.7em'}}>{this.props.comment.time}</p>
-        <hr style={{maxWidth:'100%', borderThickness:'1px', borderColor:'#eee', margin:'0px'}}/>
-      </div>
-    );
-  }
-}
-
-class Comments extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  getCommentComponents() {
-    return <div>{this.props.comments.map(function(commentData, idx){return <Comment key={idx} comment={commentData} />})}</div>;
-  }
-  render() {
-    return (
-      <div className="mt-3">
-        {this.getCommentComponents()}
-      </div>
-    );
-  }
-}
-
-class Pledge extends Component {
-  render() {
-    return(
-      <div className="card my-1">
-        <div className="card-body">
-          <h4>{this.props.title}</h4>
-          <h5>{this.props.subtitle}</h5>
-          <hr style={{maxWidth:'99%'}}/>
-          <p>{this.props.description}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
-class ProjectInfo extends Component{
+class EventInfo extends Component{
   constructor(props) {
     super(props);
 
     this.state = {
-      projectName   : 'Project Lambda',
+      workshoeventpName   : 'workshoeventp Lambda',
       upvotes       : 15,
       downvotes     : 7,
       description   : "Half Life 3 confirmed?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Half Life 3 confirmed?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -93,7 +41,7 @@ class ProjectInfo extends Component{
   render() {
     return(
       <div className="container p-3">
-        <h1 style={projectTitleStyle}>{this.state.projectName}</h1>
+        <h1 style={workshoeventpTitleStyle}>{this.state.workshoeventpName}</h1>
         <h4 className="mb-5">Company Nexus</h4>
 
         {/* Carousel */}
@@ -130,15 +78,7 @@ class ProjectInfo extends Component{
             <h3>Description</h3>
             <p>{this.state.description}</p>
 
-            <br />
-            <Comments comments={this.state.comments} />
-            <div className="form-group">
-              <input type="text" id="new_comment" className="form-control" name="new_comment" placeholder="write a comment" onChange={this.onUpdateComment.bind(this)}/>
-              <br/>
-              <br />
-              <input type="button" id="submit" value="Submit" className="btn btn-primary rounded" onClick={this.onSubmitComment.bind(this)}/>
-            </div>
-
+          <br />
           </div>
           <div className="col-md-4">
             <h3>Contact</h3>
@@ -153,11 +93,13 @@ class ProjectInfo extends Component{
             <br />
             <button className="mt-3 rounded btn btn-success">Follow Us!</button>
             <br />
-            <h3 className="mt-4 text-center">Pledges</h3>
-            <Pledge title='This is title 1' subtitle='This is a longer explained subtitle' description='THis is a longer explained subtitleTHis is a longer explained subtitleTHis is a longer explained subtitle' />
-            <Pledge title='This is title 2' subtitle='This is a longer explained subtitle' description='THis is a longer explained subtitleTHis is a longer explained subtitleTHis is a longer explained subtitle' />
-            <Pledge title='This is title 3' subtitle='This is a longer explained subtitle' description='vTHis is a longer explained subtitleTHis is a longer explained subtitleTHis is a longer explained subtitleTHis is a longer explained subtitleTHis is a longer explained subtitle' />
-
+            <h3 className="mt-4 text-center">Topics</h3>
+            <br />
+            <ol>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C++</li>
+            </ol>
           </div>
         </div>
         <br />
@@ -167,4 +109,4 @@ class ProjectInfo extends Component{
   }
 }
 
-export default ProjectInfo;
+export default EventInfo;

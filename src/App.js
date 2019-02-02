@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 
 import SearchProjects from './components/searchProjects';
 import ProjectInfo from './components/ProjectInfo';
+import EventInfo from './components/EventInfo';
+
 import LoginPage from './components/LoginPage';
 
 import SellerPreviousTransactions from './components/SellerPreviousTransactions';
@@ -42,6 +44,7 @@ class App extends Component {
             <Route path="/login"  exact component={LoginPage} />
             <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
             <Route path="/buyerTable" exact component={BuyerTransactions} />
+            <Route path="/events/:id" exact component={EventInfo} />
 
             <Route component={NoMatch} />
           </Switch>
