@@ -15,12 +15,12 @@ class Comment extends Component {
 
     return (
       <div className="container" style={{backgroundColor: '#ddd'}}>
-        <p className="mb-0 pt-3">
+        <p className="mb-0 pt-1">
         <strong>{this.props.comment.user}</strong> <br />
         {this.props.comment.text}
         </p>
         <p className="text-right mb-0" style={{fontSize:'0.7em'}}>{this.props.comment.time}</p>
-        <hr />
+        <hr style={{maxWidth:'100%', borderThickness:'1px', borderColor:'#eee', margin:'0px'}}/>
       </div>
     );
   }
@@ -125,10 +125,13 @@ class ProjectInfo extends Component{
             <br/>
             1300 &nbsp;<i className="fa fa-thumbs-up mr-2" aria-hidden="true"></i> {this.props.upvotes} &nbsp;&nbsp;
             1300 &nbsp;<i className="fa fa-thumbs-down mr-2" aria-hidden="true"></i> {this.props.downvotes}
+            <br />
+            <button className="mt-3 rounded btn btn-success">Support Us!</button>
 
           </div>
         </div>
         <Comments comments={this.state.comments} />
+        <br/>
         <div className="form-group">
           <input type="text" id="new_comment" className="form-control" name="new_comment" placeholder="write a comment" onChange={this.onUpdateComment.bind(this)}/>
           <br/>
