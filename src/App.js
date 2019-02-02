@@ -5,6 +5,7 @@ import tempComponent from './components/tempComp';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import SearchProjects from './components/searchProjects';
 //import './App.css';
 
 class App extends Component {
@@ -17,6 +18,8 @@ class App extends Component {
           <br/>
           <br/>
           <Route path="/temp/" exact component={tempComponent} />
+          <Route path="/projects/search" exact component={SearchProjects} />
+
           <Footer />
         </div>
       </Router>
