@@ -14,8 +14,9 @@ class App extends Component {
         <div>
           <Header />
           <Route path="/" exact component={FrontPage} />
+          <br/>
+          <br/>
           <Route path="/temp/" exact component={tempComponent} />
-
           <Footer />
         </div>
       </Router>

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style={{backgroundColor: 'black'}}>
         <div className="container">
           <Link className="navbar-brand js-scroll-trigger" to="/">Start Bootstrap</Link>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@ class Header extends Component {
                 <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                <a className="nav-link js-scroll-trigger" href="#contact">Login</a>
               </li>
             </ul>
           </div>
