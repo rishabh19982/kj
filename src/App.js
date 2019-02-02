@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 import SearchProjects from './components/searchProjects';
 import ProjectInfo from './components/ProjectInfo';
+import LoginPage from './components/LoginPage';
 
 //import './App.css';
 class NoMatch extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
             <Route path="/temp/" exact component={tempComponent} />
             <Route path="/projects/search" exact component={SearchProjects} />
             <Route path="/projects/:id" exact component={ProjectInfo} />
+            <Route path="/login" exact component={LoginPage} />
             <Route component={NoMatch} />
           </Switch>
           <Footer />
