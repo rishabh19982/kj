@@ -130,6 +130,35 @@ class ProjectInfo extends Component{
 
           </div>
         </div>
+        <br />
+        <div className="container row">
+        <div className="col-md-6">
+        <h3 className="text-center">You can place your orders here</h3>
+        <form>
+          <div className="form-group">
+            <input className="form-control" placeholder="Order title"></input>
+          </div>
+          <div className="form-group">
+            <textarea className="form-control" placeholder="A short description of your problem statement"></textarea>
+          </div>
+          <div className="form-group">
+            <input className="form-control" placeholder="Estimated cost"></input>
+          </div>
+          <input className="btn btn-primary  d-block mx-auto rounded" value="Submit"></input>
+        </form>
+        </div>
+        <div className="col-md-6">
+          <h3>We also take orders that fulfill these criteria</h3>
+          <ol>
+            <li>Network Securities / IoT sectors only</li>
+            <li>$10 per work-hour contract</li>
+            <li>Criteria 3</li>
+            <li>Criteria 4</li>
+          </ol>
+        </div>
+
+        </div>
+        <br />
         <Comments comments={this.state.comments} />
         <br/>
         <div className="form-group">
