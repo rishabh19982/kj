@@ -9,12 +9,12 @@ class FrontPage extends Component {
             <div className="row">
               <div className="col-lg-10 mx-auto">
                 <h1 className="text-uppercase">
-                  <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+                  <strong>One stop destination for innovation and learning</strong>
                 </h1>
                 <hr />
               </div>
               <div className="col-lg-8 mx-auto">
-                <p className="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                <p className="text-faded mb-5"></p>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
               </div>
             </div>
@@ -27,7 +27,7 @@ class FrontPage extends Component {
               <div className="col-lg-8 mx-auto text-center">
                 <h2 className="section-heading text-white">We've got what you need!</h2>
                 <hr className="light my-4" />
-                <p className="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                <p className="text-faded mb-4">Explore world of possibilities with future.Experience a great variety of workshops,Projects and internships opportunities! </p>
                 <a className="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
               </div>
             </div>
@@ -48,29 +48,29 @@ class FrontPage extends Component {
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
-                  <h3 className="mb-3">Sturdy Templates</h3>
-                  <p className="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+                  <h3 className="mb-3">Learning</h3>
+                  <p className="text-muted mb-0">Learning with clear concepts is utmost priority.</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
-                  <h3 className="mb-3">Ready to Ship</h3>
-                  <p className="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+                  <h3 className="mb-3">Earn while you earn</h3>
+                  <p className="text-muted mb-0">Learn from Industry experts</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
-                  <h3 className="mb-3">Up to Date</h3>
-                  <p className="text-muted mb-0">We update dependencies to keep things fresh.</p>
+                  <h3 className="mb-3">Coding</h3>
+                  <p className="text-muted mb-0">Aspirants with interest of variety of technology</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-                  <h3 className="mb-3">Made with Love</h3>
-                  <p className="text-muted mb-0">You have to make your websites with love these days!</p>
+                  <h3 className="mb-3">Enjoy what you do</h3>
+                  <p className="text-muted mb-0">With innovation given great importance, love for technology develops!</p>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ class FrontPage extends Component {
                         Category
                       </div>
                       <div className="project-name">
-                        Project Name
+                        Engineering and Construction
                       </div>
                     </div>
                   </div>
@@ -104,7 +104,7 @@ class FrontPage extends Component {
                         Category
                       </div>
                       <div className="project-name">
-                        Project Name
+                        Business Solutions
                       </div>
                     </div>
                   </div>
@@ -119,7 +119,7 @@ class FrontPage extends Component {
                         Category
                       </div>
                       <div className="project-name">
-                        Project Name
+                        IT Solutions
                       </div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ class FrontPage extends Component {
                         Category
                       </div>
                       <div className="project-name">
-                        Project Name
+                        Manufacturing
                       </div>
                     </div>
                   </div>
@@ -149,7 +149,7 @@ class FrontPage extends Component {
                         Category
                       </div>
                       <div className="project-name">
-                        Project Name
+                        Agro-Tech
                       </div>
                     </div>
                   </div>
@@ -161,10 +161,10 @@ class FrontPage extends Component {
                   <div className="portfolio-box-caption">
                     <div className="portfolio-box-caption-content">
                       <div className="project-category text-faded">
-                        Category
+                        And
                       </div>
                       <div className="project-name">
-                        Project Name
+                        Many More
                       </div>
                     </div>
                   </div>
@@ -174,12 +174,12 @@ class FrontPage extends Component {
           </div>
         </section>
 
-        <section className="bg-dark text-white">
+        {/*<section className="bg-dark text-white">
           <div className="container text-center">
             <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
             <a className="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
           </div>
-        </section>
+    </section>*/}
 
         <section id="contact">
           <div className="container">
@@ -187,7 +187,7 @@ class FrontPage extends Component {
               <div className="col-lg-8 mx-auto text-center">
                 <h2 className="section-heading">Let's Get In Touch!</h2>
                 <hr className="my-4" />
-                <p className="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p className="mb-5">Ready to start your next project with buddung minds? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
               </div>
             </div>
             <div className="row">

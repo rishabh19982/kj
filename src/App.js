@@ -39,7 +39,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={FrontPage} />
             <Route path="/temp/" exact component={tempComponent} />
-            <Route path="/projects/search" exact component={SearchProjects} />
+            <Route path="/projects/" exact component={SearchProjects} />
             <Route path="/projects/:id" exact component={ProjectInfo} />
             <Route path="/login"  exact component={LoginPage} />
             <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
