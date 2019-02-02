@@ -110,7 +110,7 @@ class ProjectInfo extends Component{
             </p>
           </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-3 px-3">
           <div className="col-md-8">
             <h3>Description</h3>
             <p>{this.state.description}</p>
