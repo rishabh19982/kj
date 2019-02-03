@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import stock_image from './stock_img.jpg';
 
-const workshoeventpTitleStyle = {
+const companypTitleStyle = {
   marginTop:'10vh',
   fontSize: '3em'
 };
 
-class EventInfo extends Component{
+class Company extends Component{
   constructor(props) {
     super(props);
 
     this.state = {
-      workshoeventpName   : 'workshoeventp Lambda',
+      companypName   : 'companyp Lambda',
       upvotes       : 15,
       downvotes     : 7,
       description   : "Half Life 3 confirmed?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Half Life 3 confirmed?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -41,8 +41,8 @@ class EventInfo extends Component{
   render() {
     return(
       <div className="container p-3">
-        <h1 style={workshoeventpTitleStyle}>{this.state.workshoeventpName}</h1>
-        <h4 className="mb-5">Company Nexus</h4>
+        <h1 style={companypTitleStyle}>{this.state.companypName}</h1>
+        <h4 className="mb-5">Multimedia Marketing</h4>
 
         {/* Carousel */}
         <div className="container">
@@ -80,9 +80,9 @@ class EventInfo extends Component{
 
           <br />
           </div>
-          <div className="col-md-4">
-            <h3>Contact</h3>
-            <i className="fas fa-envelope mb-3 sr-contact-2"></i>&nbsp;&nbsp;
+          <div className="col-md-4 text-center">
+            <h3 className='text-center'>Contact</h3>
+            <i className="fas fa-envelope mb-3 sr-contact-2"></i>&nbsp;
             <span><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></span>
             <br />
             <i className="fas fa-phone mb-3 sr-contact-1"></i>&nbsp;&nbsp;
@@ -93,15 +93,6 @@ class EventInfo extends Component{
             <br />
             <button className="mt-3 rounded btn btn-success">Follow Us!</button>
             <br />
-            <div className='card mt-3'>
-              <h3 className="text-center card-header">Topics</h3>
-              <br />
-              <ol>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C++</li>
-              </ol>
-            </div>
           </div>
         </div>
         <br />
@@ -111,4 +102,4 @@ class EventInfo extends Component{
   }
 }
 
-export default EventInfo;
+export default Company;

@@ -20,7 +20,7 @@ class SearchCard extends Component {
         <img className="card-img-top" src={stock_image} alt="Card image"></img>
 
         <div className="card-header">
-        <Link to={{pathname: "/projects/123", state: {description: this.props.description, }}}>{this.props.projectName}</Link> </div>
+        <Link to={{pathname: "/orders/123", state: {description: this.props.description, }}}>{this.props.orderName}</Link> </div>
         <div className="card-body">
           {this.props.description}
           <span className="d-block float-right">
@@ -34,26 +34,26 @@ class SearchCard extends Component {
   }
 }
 
-class SearchProjects extends Component {
+class SearchOrders extends Component {
   render() {
     return (
       <div>
-        <h1 style={pageHeaderStyle}>Projects</h1>
+        <h1 style={pageHeaderStyle}>Orders</h1>
         <div className='form-group container'>
-          <input style={{maxWidth:'90%', display:'inline-block'}} className='form-control mx-auto' placeholder='Search for projects/ engineering sectors...'></input>
+          <input style={{maxWidth:'90%', display:'inline-block'}} className='form-control mx-auto' placeholder='Search for companies/ engineering sectors...'></input>
           <button className='btn btn-primary rounded'>Search</button>
         </div>
         <div className="container d-flex justify-content-around flex-wrap">
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
-          <SearchCard projectName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
+          <SearchCard orderName='Proj ABC' description='lorem Ipsum' upvotes={1302} downvotes={50}/>
         </div>
       </div>
     );
   }
 }
 
-export default SearchProjects;
+export default SearchOrders;

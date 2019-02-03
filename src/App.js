@@ -6,8 +6,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import SearchProjects from './components/searchProjects';
+import SearchOrders from './components/SearchOrders';
 import ProjectInfo from './components/ProjectInfo';
+import Company from './components/Company';
+
 import EventInfo from './components/EventInfo';
+import Internships from './components/Internships';
 
 import LoginPage from './components/LoginPage';
 
@@ -39,8 +43,15 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={FrontPage} />
             <Route path="/temp/" exact component={tempComponent} />
+
             <Route path="/projects/" exact component={SearchProjects} />
             <Route path="/projects/:id" exact component={ProjectInfo} />
+
+            <Route path="/orders/" exact component={SearchOrders} />
+            <Route path="/orders/:id" exact component={Company} />
+
+            <Route path="/internships/" exact component={Internships} />
+
             <Route path="/login"  exact component={LoginPage} />
             <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
             <Route path="/buyerTable" exact component={BuyerTransactions} />

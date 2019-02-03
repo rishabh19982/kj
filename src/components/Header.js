@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-expand-md navbar-light fixed-top" id="mainNav" style={{backgroundColor: '#222'}}>
         <div className="container">
-          <Link className="navbar-brand js-scroll-trigger" to="/">Upurge</Link>
+          <Link className="navbar-brand js-scroll-trigger" to="/">Upsurge</Link>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -19,10 +19,10 @@ class Header extends Component {
                 <Link className="nav-link js-scroll-trigger" to="/events/asd">Events</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">Orders</a>
+                <Link className="nav-link js-scroll-trigger" to="/orders">Orders</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="/login">Internships</Link>
+                <Link className="nav-link js-scroll-trigger" to="/internships/">Internships</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link js-scroll-trigger" to="/login">Login</Link>
