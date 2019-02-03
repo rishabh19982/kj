@@ -1,4 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Upsurge
+### A Crowd Funding Web Application for K.J. Somaiya Students
+
+
+#### [Our REST API Repository](https://github.com/VinWare/kj-hackathon-restapi.git) which is hosted on [http://vinpyt.pythonanywhere.com/crowdfunding/api/v1.0.0](http://vinpyt.pythonanywhere.com/crowdfunding/api/v1.0.0)
+
+
 
 ## Available Scripts
 
