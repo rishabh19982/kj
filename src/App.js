@@ -41,10 +41,10 @@ class App extends Component {
             <Route path="/temp/" exact component={tempComponent} />
             <Route path="/projects/" exact component={SearchProjects} />
             <Route path="/projects/:id" exact component={ProjectInfo} />
-            <Route path="/login"  exact component={LoginPage} />
-            <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
-            <Route path="/buyerTable" exact component={BuyerTransactions} />
-            <Route path="/events/:id" exact component={EventInfo} />
+            <Route path="/login/"  exact component={LoginPage} />
+            <Route path="/sellerTable/" exact component={SellerPreviousTransactions} />
+            <Route path="/buyerTable/" exact component={BuyerTransactions} />
+            <Route path="/events/:id/" exact component={EventInfo} />
 
             <Route component={NoMatch} />
           </Switch>

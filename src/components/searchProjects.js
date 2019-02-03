@@ -20,7 +20,7 @@ class SearchCard extends Component {
         <img className="card-img-top" src={stock_image} alt="Card image"></img>
 
         <div className="card-header">
-        <Link to={{pathname: "/projects/123", state: {description: this.props.description, }}}>{this.props.projectName}</Link> </div>
+        <Link to={{pathname: "/projects/123/", state: {description: this.props.description, }}}>{this.props.projectName}</Link> </div>
         <div className="card-body">
           {this.props.description}
           <span className="d-block float-right">
