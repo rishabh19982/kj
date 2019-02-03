@@ -9,7 +9,7 @@ import SearchProjects from './components/searchProjects';
 import SearchOrders from './components/SearchOrders';
 import ProjectInfo from './components/ProjectInfo';
 import Company from './components/Company';
-
+import Events from './components/Events';
 import EventInfo from './components/EventInfo';
 import Internships from './components/Internships';
 
@@ -50,7 +50,7 @@ class App extends Component {
             <Route path="/orders/" exact component={SearchOrders} />
             <Route path="/orders/:id" exact component={Company} />
             <Route path="/internships/" exact component={Internships} />
-
+            <Route path="/events/" exact component={Events} />
             <Route path="/login"  exact component={LoginPage} />
             <Route path="/sellerTable" exact component={SellerPreviousTransactions} />
             <Route path="/buyerTable" exact component={BuyerTransactions} />
