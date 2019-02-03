@@ -13,6 +13,8 @@ class LoginPage extends Component {
     super(props);
     this.state = {email: '', pwd: ''};
   }
+
+
   handleEmailChange(e) {
     this.setState(Object.assign({}, this.state, {email: e.target.value}));
   }
