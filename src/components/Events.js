@@ -19,14 +19,39 @@ class EventCard extends Component {
   render() {
     return(
       
-      <div className="card mx-1 my-3" style={{width:'99vw',maxWidth:'1000px',maxHeight:'100px',margin:'10px', overflowY:'hidden'}}>
-        <Link to={{pathname: "/events/123", state: {description: this.props.description, }}}>
-        {this.props.eventName}</Link> 
-        <div className='d-block float-right'>
-        <button className='btn btn-success' style={{height:'20vw',maxHeight:'30px'}}>More details</button>
+      <div className="card mx-1 my-3" style={{width:'99vw',maxWidth:'1000px',margin:'10px'}}>
+     <h1 style={{}}>   <Link to={{pathname: "/events/123", state: {description: this.props.description, }}}>
+        {this.props.eventName}</Link> </h1>
+        <div className="container">
+          <div id="carousel-id" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner" role="listbox">
+              <div className="carousel-item active">
+                <img src="https://dummyimage.com/1200x400/000/fff" alt="First slide" className="img-fluid" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://dummyimage.com/1200x400/ccc/000" alt="First slide" className="img-fluid" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://dummyimage.com/1200x400/000/fff" alt="First slide" className="img-fluid" />
+              </div>
+            </div>
+            <ol className="carousel-indicators">
+              <li data-target="#carousel-" data-slide-to="0" className="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <p className="text-xs-center">
+              <a className="" href="#carousel-id" role="button" data-slide="prev">
+                <span className="icon-prev" aria-hidden="true"></span> Previous
+              </a>&emsp;
+              <a className="l" href="#carousel-id" role="button" data-slide="next">
+                <span className="icon-next" aria-hidden="true"></span> Next
+              </a>
+            </p>
+          </div>
         </div>
-        <br/>
-          {this.props.description}
+      
+          Click on Event name for more details
             
         
         </div>
